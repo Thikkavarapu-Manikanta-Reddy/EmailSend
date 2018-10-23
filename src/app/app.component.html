@@ -1,0 +1,11 @@
+<div style="text-align:center" *ngIf="!loggedin">
+  <h1>
+    Login to continue
+  </h1>
+  <input type="text" [(ngModel)]="email">
+  <button (click)="login()">Login</button>
+</div>
+<div *ngIf="loggedin">
+  <h1> You have logged in </h1>
+  <h3> Check your email </h3>
+</div>
